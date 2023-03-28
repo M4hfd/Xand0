@@ -1,11 +1,10 @@
 win_state = False
 counter = 0
-player = ""
 playing_field = list(range(1, 10))
 win_cords = ((1, 2, 3), (4, 5, 6), (7, 8, 9), (1, 4, 7), (2, 5, 8), (3, 6, 9), (1, 5, 9), (3, 5, 7))
 
-while win_state == False:
-    if counter % 2 == 0:
+while not win_state:
+    if not counter %2:
         player = "O"
     else:
         player = "X"
